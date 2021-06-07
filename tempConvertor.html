@@ -4,11 +4,20 @@
         <link rel="stylesheet" href="./tempConverter.css">
     </head>
     <body>
-        <form id="temCalc" onsubmit="calculateTem(); return false" class="maindiv">
+        <form id="temCalc" onsubmit="calculateTemp(); return false" class="maindiv">
             <div class="childdiv">
                <label for="temp">Please enter the tem you want to convert</label>
                <input type="number" name="temp" id="temp" >
+               <select name="temp_diff" id="temp_diff">
+                   <option value="cel">Celsius</option>
+                   <option value="fah">Farenheit</option>
+                     
+               </select> </br>
+               <input type="submit" name="temp"> <br />
+               <span id="resultContainer"></span>
             </div>
         </form>
+        <script src="tempConverter.js"></script>
+
     </body>
 </html>
